@@ -1,0 +1,410 @@
+body{
+    background-color: #efefef;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.CusContainer{
+    margin-top: 26px;
+}
+@media screen and (max-width: 768px) {
+    .CusContainer{
+        margin-top: 39px;
+    }
+}
+
+
+/* ======================== beforeNav ======================== */
+.beforeNav{
+    color:#F8F9FA;
+    background-color: #AF1C25;
+    font-size: 1.05rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+/* Media query for screens with a maximum width of 768px (typical for phones) */
+@media screen and (max-width: 768px) {
+    .beforeNav {
+        font-size: 0.8rem; 
+
+    }
+}
+
+/* ======================== navBar ======================== */
+.navbar{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.navbar-nav .nav-link.active{
+    color: #AF1C25; 
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #F8F9FA; 
+    background-color: #AF1C25;
+    border-radius: 2px;
+
+}
+
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: #AF1C25;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-5px); 
+}
+
+.nav-item{
+    margin-right: 3px;
+}
+
+/* ============================ overview ============================ */
+.overview{
+    margin-top: 99px;
+}
+.overview-img{
+    text-align: center; 
+    padding-top: 50px;
+}
+
+
+/* ======================== overview image ================================= */
+
+.full-width-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    z-index: 0;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.273);
+    z-index: 1;
+}
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.text-over-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+}
+/* ============================ headings ============================ */
+.heading{
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    color: #AF1C25;
+}
+.imageText{
+    font-family: 'Merriweather', serif;
+    color: #F8F9FA;
+    font-size: 2.5rem;
+}
+.imageText2{
+    font-family: 'Merriweather', serif;
+    color: #FF9843;
+    font-size: 2rem;
+}
+
+
+/* =================================== para =============================== */
+
+.para{
+    font-size: 1.1rem;
+}
+
+/* ============================ aboutFounder ============================== */
+.description-container-founder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Set the desired height */
+    padding: 30px;
+}
+
+
+/* ============================ carousel ============================== */
+
+.skyblue {
+	background-color: #EFEFEF;
+}
+
+.carousel-indicators {
+	bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+	background-image: none;
+}
+/* .carousel-item {
+    background-image: url(../assets/bulgarian-4384342_1280.jpg);
+	min-height: 650px;
+	height: 100%;
+	width:100%;
+} */
+
+.carousel-item1 {
+    position: relative;
+    min-height: 650px;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.251); 
+    z-index: 1;
+}
+
+.carousel-item1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bulgarian-4384342_1280.jpg);
+    /* background-image: url(../assets/bulgarian-4384342_1280.jpg); */
+    background-size: cover; /* Ensure the image covers the entire container without repeating */
+    z-index: 0; /* Set the z-index to be below the overlay */
+}
+
+.carousel-item2 {
+    position: relative;
+    min-height: 650px;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.251); 
+    z-index: 1;
+}
+
+.carousel-item2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/machine_about.jpeg);
+    background-size: cover; /* Ensure the image covers the entire container without repeating */
+    z-index: 0; /* Set the z-index to be below the overlay */
+}
+
+
+.carousel-item3 {
+    position: relative;
+    min-height: 650px;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.381); 
+    z-index: 1;
+}
+
+.carousel-item3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/milling-1137974_1280.jpg);
+    background-size: cover; /* Ensure the image covers the entire container without repeating */
+    z-index: 0; /* Set the z-index to be below the overlay */
+}
+.carousel-caption p{
+    background-color: rgba(240, 240, 240, 0.551); 
+    color: #AF1C25;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+.h3{
+    color: #AF1C25;
+    font-size: 3rem;
+}
+
+
+/* Media query for smaller screens (home) */
+
+
+.carousel .icon-container{
+    
+    background-color: rgba(240, 240, 240, 0.551);
+    color: #AF1C25;
+    font-size: 3.5rem;
+}
+
+.para1{
+    text-align: left;
+}
+.para2{
+    text-align: left;
+}
+
+.carousel-caption button {
+	background-color: rgb(255, 255, 255);
+    color: #AF1C25;
+    font-size: 1.5rem
+}
+.carousel-caption h3 {
+	padding: .5em;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption p {
+        font-size: 1rem; /* Adjust the font size for smaller screens */
+        line-height: 2rem; /* Adjust the line height for smaller screens */
+    }
+
+    .h3 {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+    .carousel-caption button {
+        font-size: 0.5rem;
+    }
+}
+
+.carousel .icon-container {
+	display: inline-block;
+	font-size: 25px;
+	line-height: 25px;
+	padding: 1em;
+	text-align: center;
+	border-radius: 50%;
+}
+.carousel-caption button {
+	border-color: #AF1C25;
+	margin-top: 1em;
+}
+
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+	animation-delay: 1s;
+}
+.carousel-caption h3:nth-child(2) {
+	animation-delay: 2s;
+}
+.carousel-caption button {
+	animation-delay: 3s;
+}
+
+/* ///////////////////////// sectors /////////////////////// */
+.sectors{
+    padding: 3%;
+}
+.card-icon {
+    font-size: 3em; /* Adjust the size as needed */
+    padding-top: 5%;
+}
+
+.h4{
+    color: #AF1C25;
+    font-size: 1.7rem;
+}
+.paraSector{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* ///////////////////////// client /////////////////////// */
+.client{
+    background-color: white;
+    color: black;
+}
+/* Custom Styles */
+.client-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding-top: 30px; /* Adjust padding as needed */
+    padding-left: 30px; /* Adjust padding as needed */
+    padding-right: 30px; /* Adjust padding as needed */
+
+  }
+
+  .client-img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the images within the column */
+    padding-top: 2%;
+  }
+  .client-img2 {
+    max-width: auto;
+    height: 30%;
+    display: block;
+    margin: 0 auto; 
+    padding-top: 2%;
+  }
+
+
+  /* ===================== footer ===================== */
+  .social{
+    margin-top: 4%;
+    background-color: #EFEFEF;
+    color: #AF1C25;
+  }
+
+  /* animation of hover  */
+
+  .btn-5 {
+    transition: 1s ease;
+  } 
+  
+  .btn-5:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+  }
