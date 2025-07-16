@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ================ Bootstrap link ================ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Bootstrap CSS from CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <script src="https://kit.fontawesome.com/a70249e646.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
+    <!-- ================ connecting CSS to the website ================ -->
+    <link rel="stylesheet" href="./style/main.css">
+    <!-- ===================== Google Font ===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!-- =============================== favicon  =========================== -->
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- ============================ Navigating to another page ====================== -->
+    <script>
+      function navigateToAbout() {
+          window.location.href = './about.html';
+      }
+    </script>
+
+
+    <title>Gurjas Industries</title>
+    
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- ============================= before Nav =============================   -->
+    <!-- <div class="beforeNav fixed-top">E-mail: gurraj@gurjasindustries.com <span style="padding-left: 15px;" >Contact:</span>+91 - 855190 7719</div> -->
+    <div class="beforeNav fixed-top row ">
+      <div class="col-lg-6 text-lg-right">
+          E-mail: gurraj@gurjasindustries.com
+      </div>
+      <div class="col-lg-6 text-lg-left">
+          Contact:+91-8551907719
+      </div>
+    </div>
+    
+    <!-- ============================= Nav Bar start =============================   -->
+    <div>
+        <div class="CusContainer fixed-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0 pb-2">
+                <div class="container-fluid ">
+                    <a class="navbar-brand brandName" href="/index.html">
+                      <img src="./assets/Logo.png" width="40" height="40" class="d-inline-block" alt="">
+                      Gurjas Industries
+                    </a>
+                    <button style="border-color: black;" class="navbar-toggler mr-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span ><i class="fas fa-bars fa-1x"></i></span>
+                    </button>
+
+                    <!-- ====================== NavBar Buttons start====================== -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto"> <!-- Add ml-auto class here -->
+                            <li class="nav-item">
+                                <a class="nav-link active btn-5" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            
+                            <li class="nav-item btn-5 ">
+                              <a class="nav-link" href="./about.html">About us</a>
+                            </li>
+
+                            <!-- <li class="nav-item btn-5">
+                                <a class="nav-link" href="#">Infrastructure</a>
+                            </li> -->
+                            <li class="nav-item btn-5">
+                              <a class="nav-link" href="./services.html">Our Services</a>
+                            </li>
+                            <li class="nav-item btn-5">
+                                <a class="nav-link" href="#contactUS">Contact us</a>
+                            </li>
+                            <li class="nav-item btn-5">
+                              <a class="nav-link" href="./Company Profile.pdf"><i class="fas fa-1x fa-file-pdf"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ====================== NavBar Buttons end====================== -->
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- ============================= Nav Bar End =============================   -->
+
+
+    <!-- ============================= Carausal Start =============================   -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner skyblue">
+
+          <!-- first slide -->
+          <div class="carousel-item carousel-item1 active skyblue">
+            <div class="carousel-caption d-md-block">
+                <p class="p-3 para1" data-animation="animated bounceInUp" > <span class="h3" >Welcome to Gurjas Industries.</span><br> 
+                    Your Source for Precision Machining services in Maharashtra. <br>
+                    Specialized in Heavy Plano Miller, Horizontal Boring, Machine Jobs and Custom Fabrication Jobs.</p>
+              <button class="btn btn-dark btn-lg" onclick="navigateToAbout()" data-animation="animated zoomInUp">Read More</button>
+            </div>
+          </div>
+
+          <!-- second slide -->
+          <div class="carousel-item carousel-item2 skyblue">
+            <div class="carousel-caption d-md-block">
+                <p class="p-3" data-animation="animated bounceInLeft" > <span class="h3" >We Focus on Quality.</span><br> 
+                    We are commited to the quality of out products and our aim is to continually improve all of our processes.</p>
+              <button class="btn btn-dark btn-lg" onclick="navigateToAbout()" data-animation="animated zoomInRight">Read More</button>
+            </div>
+          </div>
+
+          <!-- third slide -->
+          <div class="carousel-item carousel-item3 skyblue">
+            <div class="carousel-caption d-md-block">
+                <div class="carousel-caption d-md-block">
+                    <p class="p-3 para2" data-animation="animated flipInX" > <span class="h3" >Services.</span><br> 
+                      Specialized in Heavy Engineering jobs.</p>
+                  <button class="btn btn-dark btn-lg" onclick="navigateToAbout()" data-animation="animated lightSpeedIn">Read More</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- controls -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- ============================= Carausal End =============================   -->
+      <!-- ========================================= sectors ===================================== -->
+      <div class="sectors">
+        <div class="container sectors mt-4">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="heading">Sectors</h2>
+              <p class="para pb-5">
+                Leaders in Precision Machining Services, Gurjas Industries in crafting precision machined parts and assemblies for Engineering & Heavy Engineering Works for sectors including Steel Plant Components, Chemical Mixers Plant Components, Paper Mill Industries & Custom Fabrication works.
+              </p>
+            </div>
+          </div>
+      
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-6 col-md-6 btn-5 ">
+              <div class="card mt-3 custom-card text-center">
+                <i class="fas fa-industry fa-4x card-icon"></i>
+                <div class="card-body ">
+                    <h2 class="h4">Precision Machining</h2>
+                    <p class="paraSector">At Gurjas Industries, we specialize in machining parts with great precision. Our goal is to provide reliable and long-lasting solutions. Every project shows our dedication to quality work.</p>
+                
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="col-lg-6 col-md-6 btn-5 ">
+              <div class="card mt-3 custom-card text-center">
+                <!-- <i class="fas fa-industry fa-4x card-icon"></i> -->
+                <i class="fas fa-check-circle fa-4x card-icon"></i>
+                <div class="card-body">
+                    <h2 class="h4">Precision Fabrication</h2>
+                    <p class="paraSector">                      
+                      At Gurjas Industries, we build strong and durable structures. From large frameworks to detailed components, our careful work ensures every project is built to last.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- ========================================= client ===================================== -->
+    <div class="client pb-5">
+      <div class="container-fluid client-section">
+        <div class="row">
+          <h2 class="heading pt-4">Our Clients:</h2>
+          <!-- Client 1 -->
+          <div class="col-md-4 btn-5 ">
+            <img src="./assets/clients/download (1).jpeg" alt="Client 1" class="client-img">
+          </div>
+    
+          <!-- Client 2 -->
+          <div class="col-md-4 btn-5">
+            <img src="./assets/clients/empt.jpeg" alt="Client 2" class="client-img">
+          </div>
+    
+          <!-- Client 3 -->
+          <div class="col-md-4 btn-5">
+            <img src="./assets/clients/mukand.png" alt="Client 3" class="client-img">
+          </div>
+
+          <div class="col-md-4 btn-5">
+            <img src="./assets/clients/SSg.png" alt="Client 4" class="client-img">
+          </div>
+
+          <div class="col-md-4 btn-5">
+            <img src="./assets/clients/ssm.png" alt="Client 5" class="client-img mt-4 pt-4">
+          </div>
+
+          <div class="col-md-4 btn-5">
+            <img src="./assets/clients/stec.png" alt="Client 6" class="client-img mt-4 pt-4 ">
+          </div>
+
+          <div class="col-md-4 btn-5">
+            <img src="./assets/clients/unicraft.jpg" alt="Client 8" class="client-img">
+          </div>
+
+          <div class="col-md-4 btn-5">
+            <img src="./assets/clients/uni.png" alt="Client 9" class="client-img" >
+          </div>
+
+          <div class="col-md-4 btn-5">
+            <img src="./assets/clients/download.jpeg" alt="Client 10" class="client-img" >
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <!-- ========================================= footer ===================================== -->
+      <section id="contactUS">
+        <!-- ///////////////////////// SOCIAL MEDIA HANDLES ///////////////////////// -->
+            <div class="container-fluid social pb-3" style="width: 100%; padding-top: 5%;">
+            <!-- ///////////////////////// Contact us main section ///////////////////////// -->
+            
+            <div class="contact-us-main">
+              <div class="container pb-5">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6 col-xl-6 mx-auto d-none d-sm-none d-lg-block">
+                    <!-- //////////////////////////// MAP //////////////////////////// -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7004682048955!2d73.15945531479673!3d19.20828075279286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7953d12af8c1d%3A0xb1a62833ace2b097!2sAdvocate%20Vijay%20Watwani!5e0!3m2!1sen!2sin!4v1629979194583!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2426094531384!2d73.18907907504187!3d19.18460304855452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79344b57f850f%3A0x6b77857acbf4ae82!2sGURJAS%20INDUSTRIES!5e0!3m2!1sen!2sin!4v1705327388491!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                  <div class="col-sm-4 d-inline-block d-lg-none">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7004682048955!2d73.15945531479673!3d19.20828075279286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7953d12af8c1d%3A0xb1a62833ace2b097!2sAdvocate%20Vijay%20Watwani!5e0!3m2!1sen!2sin!4v1629979194583!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2426094531384!2d73.18907907504187!3d19.18460304855452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79344b57f850f%3A0x6b77857acbf4ae82!2sGURJAS%20INDUSTRIES!5e0!3m2!1sen!2sin!4v1705327388491!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                  <div class="col-lg-6">
+                      <h3>Contact Us</h3>
+                      <div class="pl-5 pr-5">
+                        <p class="pt-4 para"> <i class="fas fa-map-marker-alt"></i> <b>Address:</b> Factory : -W/79 A, MIDC ANAND NAGAR, AMBERNATH(E) -421506.</p>
+                        <p class="pt-4 para"> <i class="fas fa-phone-alt"></i> <b>Phone:</b> +91-855190 7719, +91-989013 7719 </p>
+                        <p class="pt-4 para"  > <i class="fas fa-paper-plane"></i> <b>Mail:</b> gurraj@gurjasindustries.com</p>
+                        <p class="pt-4 para"> <i class="fas fa-globe"></i> <b>Website:</b> www.gurjasindustries.com</p>
+                      </div>
+                </div>
+              </div>
+              
+              </div>
+            </div>
+    
+            <!-- ///////////////////////// Footer Copyright ///////////////////////// -->
+            <div class="container">
+                <div class="text-center">
+                    <h6><span><img src="./assets/Logo.png" alt="logo" height="35px" width="35px" style="padding: 4px;" ></span>Gurjas Industries 2024 ©</h6>
+                </div>              
+            </div>
+    
+       </section>
+      
+      <!-- Bootstrap JS and Popper.js scripts -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-enE5T5niF5A6eWqIyS7wOHKUZ3UrGdJSm5VzL5Cez8OCZ8B33WGGKuLwOr0d/jIM" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyD8tHtafWIcE4GgGgCMAIqd3bP6eg3fP" crossorigin="anonymous"></script>
+    
+
+
+<!-- Required JavaScript from CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./assets/index.js"></script>
+</body>
+</html>
